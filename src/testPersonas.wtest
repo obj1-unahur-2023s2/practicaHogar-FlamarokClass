@@ -1,0 +1,16 @@
+import personas.*
+import habitaciones.*
+
+describe "personas y confort" {
+const nena = new Persona(edad=3, sabeCocina= false)
+const miguel = new Persona(edad=30, sabeCocina= true)
+const banio1 =  new Banio()
+const cocina1 = new Cocina(metrosCuadrados=4)
+	test "Banio" {
+		assert.equals(12, nena.nivelDeConfortQueAporta(banio1))
+	}
+	test "Cocina" {
+		assert.equals(10.4,miguel.nivelDeConfortQueAporta(cocina1))
+	}
+	
+}
