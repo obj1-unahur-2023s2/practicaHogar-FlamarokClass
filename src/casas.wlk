@@ -18,4 +18,8 @@ class Casa {
 		return habitaciones.sum({h => h.nivelDeConfort(unaPersona)})
 	}
 	
+	method cantidadDeHabitaciones(){
+		return habitaciones.size()
+	}
+	
 }

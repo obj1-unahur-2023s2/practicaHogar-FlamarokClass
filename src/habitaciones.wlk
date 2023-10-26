@@ -3,6 +3,9 @@ class Habitacion {
 	const ocupantes = []
 	
 	method ocupantes() = ocupantes 
+	method numeroOcupantes() {
+		return ocupantes.size()
+	} 
 	
 	method nivelDeConfort(unaPersona) = 10
 	
