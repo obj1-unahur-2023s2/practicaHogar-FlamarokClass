@@ -63,7 +63,7 @@ class Cocina inherits Habitacion{
 	var metrosCuadrados
 	override method nivelDeConfort(unaPersona) {
 		 if(unaPersona.sabeCocina()){
-			return super(unaPersona) + metrosCuadrados * 0.1
+			return super(unaPersona) + metrosCuadrados * procentajeDeCocina.cantidad()
 		}
 		else{
 			return super(unaPersona)
@@ -75,6 +75,6 @@ class Cocina inherits Habitacion{
 	}
 }
 
-object porcentajeDeCocina { // metodo para todas las cocinas que utilizan el 
+object porcentajeDeCocina { // metodo para no tener que setterar (y cambiar de ser necesario) en todas las instancias.
 	method cantidad() = 1.10
 }
